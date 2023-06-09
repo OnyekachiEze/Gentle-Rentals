@@ -1,0 +1,420 @@
+:root {
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient(#fe5b3d, #ffac38);
+}
+
+body {
+    margin: 0;
+    height: 1200px;
+}
+
+.dropbtn {
+    color: black;
+    font-size: 16px;
+    border: none;
+    margin-left: 50px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.explore {
+    margin-top: 120px;
+    background: url(/images2/bg/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.explore h1 {
+    padding-top: 52px;
+}
+
+.explore .text {
+    width: 50%;
+    color: #fff;
+    margin-left: 20px;
+    height: 30rem;
+}
+
+.explore p {
+    line-height: 33px;
+}
+
+.explore2 {
+    display: flex;
+}
+
+.explore2 .side {
+    display: flex;
+}
+
+.explore2 i {
+    font-size: 32px;
+    background-color: var(--main-color);
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: 12px;
+
+}
+
+.explore2 .side2 {
+    margin-left: 22px;
+}
+
+.explore2 h4 {
+    color: var(--main-color);
+    font-size: 30px;
+    width: 150%;
+}
+
+.explore h2 {
+    background-color: var(--main-color);
+    width: 28%;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.our .top {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.only {
+    display: flex;
+    margin-top: 50px;
+}
+
+.img img {
+    width: 90%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #474fa0;
+    background-color: #474fa0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: var(--main-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background: #474fa0;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.only .text {
+    margin-top: 120px;
+}
+
+.comfort {
+    margin-top: 50px;
+    display: flex;
+}
+
+
+.comfort div {
+    margin-left: 18px;
+}
+
+.comfort i {
+    color: white;
+    background: #474fa0;
+    padding: 12px;
+    font-size: 32px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.comfort h3 {
+    line-height: 42px;
+}
+
+.comfort h1 {
+    width: 70%;
+    line-height: 43px;
+}
+
+.comfort p {
+    line-height: 34px;
+}
+
+.excellent {
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+.excellent .excellent-box {
+    margin-left: 20px;
+}
+
+.excellent .excellent-box .i {
+    color: #474fa0;
+    margin-left: 350px;
+    font-size: 50px;
+}
+
+.excellent .excellent-box {
+    padding: 12px;
+    margin: 10px;
+    color: #ffffffb3;
+    height: 700px;
+}
+
+.excellent .excellent-box h2 {
+    color: white;
+    margin-bottom: 12px;
+    width: 90%;
+    margin: 20px;
+}
+
+.excellent .excellent-box p {
+    margin: 25px;
+    margin-top: 100px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.excellent .excellent-box .name {
+    display: flex;
+}
+
+.excellent .excellent-box .name hr {
+    width: 10%;
+    height: 0;
+    position: relative;
+    top: 6px;
+}
+
+.news .first {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.news .flex {
+    display: flex;
+    margin-left: 30px;
+}
+
+.news .flex .image img {
+    width: 90%;
+}
+
+.news .flex .image .img-text {
+    background-color: #474fa0;
+    position: relative;
+    bottom: 230px;
+    left: 12px;
+    color: white;
+    letter-spacing: 3px;
+    width: 14%;
+    text-align: center;
+    padding: 12px;
+}
+
+.news .flex .news-text {
+    background-color: white;
+    position: relative;
+    bottom: 120px;
+    left: 24px;
+    padding: 30px;
+    width: 80%;
+
+}
+
+.news .flex .news-text h2 {
+    margin-bottom: 22px;
+}
+
+.news .flex .news-text p {
+    line-height: 32px;
+}
+
+.news .flex .news-text button {
+    background-color: #474fa0;
+    color: white;
+    padding: 7px;
+    border-color: #474fa0;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 320px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.row {
+    background-color: #474fa0;
+    height: 400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-top: 100px;
+}
+
+.card .fa {
+    font-size: 50px;
+    color: #474fa0;
+}
+
+.card h3 {
+    color: #474fa0;
+    font-size: 32px;
+}
+
+.cars ul {
+    display: flex;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.cars ul li {
+    color: #474fa0;
+    font-size: 30px;
+    margin-left: 30px;
+    list-style-type: circle;
+}
+footer {
+    background-color:#474fa0 ;
+    color: white;
+    padding: 30px;
+}
+footer .left {
+    display: flex;
+}
+footer .about1 {
+    width: 30%;
+}
+
+footer  h2 {
+    margin-bottom: 12px;
+}
+
+footer .about1 p {
+    line-height: 32px;
+}
+
+footer .contact {
+    margin-left: 40px;
+}
+
+footer .contact p {
+    line-height: 40px;
+}
+
+footer .contact i {
+    color: var(--main-color);
+}
+
+footer .quick {
+    margin-left: 40px;
+}
+
+footer .quick h4 {
+    line-height: 30px;
+}
+
+footer .social-icons {
+    margin-left: 60px;
+}
+
+footer .social-icons i {
+    font-size: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    color: white;
+    padding: 12px;
+}
+footer hr {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+footer .right {
+    display: flex;
+}
+footer .two {
+    margin-left: 540px;
+}
+footer span {
+    margin-left: 50px;
+}
