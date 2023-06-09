@@ -46,3 +46,20 @@ sr.reveal('.services-container .box' ,{delay: 600, origin: 'top'})
 sr.reveal('.about-container .box' ,{delay: 600, origin: 'top'})
 sr.reveal('.reviews-container' ,{delay: 600, origin: 'top'})
 sr.reveal('.newsletter .box' ,{delay: 400, origin: 'bottom'})
+
+
+
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
