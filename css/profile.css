@@ -40,11 +40,11 @@
 }
 
 .side-content i {
-    color: #474fa0;
+    color: white;
 }
 
 .side-content #active, i{
-    background-color: var(--main-color);
+    background-color: #474fa0;
     color: white;
     padding: 8px;
     text-align: center;
